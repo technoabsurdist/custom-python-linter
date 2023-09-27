@@ -1,6 +1,6 @@
 # My Python Linter
 
-I've been wanting to build my own linter for a while now, so this is me giving it a shot through building an extremely simple one and then scaling it up with time. This linter is built in Python.
+This is a Python linter aimed at catching common mistakes in Python code. It's a simple project that I intend to expand over time.
 
 ## Table of Contents
 
@@ -12,6 +12,9 @@ I've been wanting to build my own linter for a while now, so this is me giving i
 ## Installation
 
 1. Clone the repository
+    ```
+    git clone <repository_url>
+    ```
 2. Install dependencies
     ```
     pip install -r requirements.txt
@@ -19,27 +22,7 @@ I've been wanting to build my own linter for a while now, so this is me giving i
 
 ## Usage
 
-- Run the linter with the following command:
-    ```
-    python linter.py
-    ```
-- The linter will check all `.py` files in the `src` directory.
-- Any errors or warnings will be printed to the console.
+Run the linter by using the `--file` argument to specify the Python file you want to lint.
 
-## Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with a descriptive message.
-4. Push your changes to your forked repository.
-5. Submit a pull request to the original repository.
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
----
-
-Feel free to customize this README file to fit your specific project needs. Let me know if you need any further assistance!
+```bash
+python main.py --file your_file.py
