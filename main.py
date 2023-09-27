@@ -1,5 +1,5 @@
 import argparse
-from helpers import parse_file, return_errors_formatted
+import helpers
 
 def main():
     parser = argparse.ArgumentParser()
@@ -7,12 +7,8 @@ def main():
     args = parser.parse_args()
     file_to_lint = args.file
 
-    # 2) Parse file
-    errors_found = parse_file(file_to_lint)
-    # print("Errors found: ", errors_found)
-
-    # 3) Print errors formatted to console
-    return_errors_formatted(errors_found)
+    # Linting logic
+    helpers.lint_file(file_to_lint)
 
 if __name__ == "__main__":
     main()
