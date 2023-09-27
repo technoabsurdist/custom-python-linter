@@ -7,7 +7,7 @@ class Error:
         self.column_number = column_number
 
     def __str__(self):
-        return f"\033[91m{self.file_name}\033[0m:\033[92m{self.line_number}:{self.column_number}\033[0m: \033[93m{self.message}\033[0m"
+        return f"\n\033[91m{self.file_name}\033[0m:\033[92m{self.line_number}:{self.column_number}\033[0m: \033[93m{self.message}\033[0m\n"
 
 class WhiteSpaceError(Error):
     def __init__(self, message, file_name, line_number, column_number, code_snippet):

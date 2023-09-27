@@ -55,4 +55,4 @@ def lint_file_syntax(file_to_lint):
         for last_open, last_line, last_col in stack:
             errors_list.append(errors.CustomSyntaxError("Unmatched opening character", file_to_lint, last_line, last_col))
 
-    return errors
+    return errors_list
